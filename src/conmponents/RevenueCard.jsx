@@ -14,11 +14,11 @@ function RevenueCard(
         ?
       </div>
       <div className='flex justify-between'>
-        <div>
+        <div className='font-semibold text-2xl'>
           {amount}
         </div>
-        {orderCount ? <div className='flex'>
-          <div>
+        {orderCount ? <div className='flex text-blue-400 cursor-pointer font-medium'>
+          <div  className='underline'>
             {orderCount} orders(s) 
           </div>
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
