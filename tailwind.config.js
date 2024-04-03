@@ -15,7 +15,11 @@ export default {
       searchBar: "#f2f2f2",
       searchText: "#808080",
       red: "red",
-      borderRadius: "#d9d9d9"
+      borderRadius: "#d9d9d9",
+      dashboardBack: "#fafafa",
+      blue: {
+        400: "#126eb4"
+      }
     }
   },
   plugins: [],
