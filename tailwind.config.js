@@ -17,9 +17,10 @@ export default {
       red: "red",
       borderRadius: "#d9d9d9",
       dashboardBack: "#fafafa",
+      darkGrey: "#707070",
       blue: {
         400: "#126eb4"
-      }
+      },
     }
   },
   plugins: [],
