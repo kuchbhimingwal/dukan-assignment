@@ -10,7 +10,8 @@ export default {
     colors: {
       navColor: "#1e2640",
       white: "#ffffff",
-      black: "#000000"
+      black: "#000000",
+      navHover: "#363c53"
     }
   },
   plugins: [],

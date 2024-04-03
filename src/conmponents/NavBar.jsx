@@ -24,9 +24,11 @@ function NavBar({
         </div>
 
       </div>
-      {navItems.map((item)=>(
-        <NavItemComp svg={item.icon} title={item.title} />
-      ))}
+      <div className='px-2'>
+        {navItems.map((item)=>(
+          <NavItemComp svg={item.icon} title={item.title} />
+        ))}
+      </div>
     </div>
   )
 }
