@@ -21,6 +21,10 @@ export default {
       blue: {
         400: "#126eb4"
       },
+      websiteBlue: {
+        light : "#126eb4",
+        dark : "#0e4f82"
+      }
     }
   },
   plugins: [],

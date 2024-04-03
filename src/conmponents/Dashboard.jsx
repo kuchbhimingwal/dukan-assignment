@@ -14,9 +14,9 @@ function Dashboard() {
         </div>
       </div>
       <div className="grid grid-cols-3">
-        <RevenueCard title={"Next Payout"} amount={"2,312.23"} orderCount={23} nextPayment="Today, 04:00PM"/>
-        <RevenueCard title={"Amount pendnig"} amount={"92,321,20"} orderCount={13} />
-        <RevenueCard title={"Amount Processed"} amount={"23,92,312.19"} orderCount={0}/>
+        <RevenueCard title={"Next Payout"} amount={"2,312.23"} orderCount={23} nextPayment="Today, 04:00PM" isBlue={true}/>
+        <RevenueCard title={"Amount pendnig"} amount={"92,321,20"} orderCount={13} isBlue={false}/>
+        <RevenueCard title={"Amount Processed"} amount={"23,92,312.19"} orderCount={0} isBlue={false}/>
         </div>
     </div>
   )
