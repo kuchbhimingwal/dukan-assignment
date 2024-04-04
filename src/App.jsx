@@ -6,13 +6,15 @@ import RevenueCard from "./conmponents/RevenueCard"
 function App() {
 
   return (
-    <div className="grid grid-cols-5 h-full">
-      <div className="col-span-1">
+    <div className="grid lg:grid-cols-5 h-full ">
+      <div className="col-span-1 hidden lg:block">
         <NavBar companyName="Nishyan"/>
       </div>
-      <div className="col-span-4">
+      <div className="lg:col-span-4">
           <Header />
-          <Dashboard />
+          <div className="bg-dashboardBack">
+          <Dashboard whatMonth="This Month"/>
+          </div>
       </div>
     </div>
   )
