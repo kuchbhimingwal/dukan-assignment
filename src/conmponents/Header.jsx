@@ -5,7 +5,7 @@ import HeaderIcons from './HeaderIcons'
 
 function Header() {
   return (
-    <div className='grid grid-cols-3 border-b border-borderRadius'>
+    <div className='grid grid-cols-2 sm:grid-cols-3 border-b border-borderRadius'>
       <HeaderLinks />
       <SearchBar />
       <HeaderIcons />

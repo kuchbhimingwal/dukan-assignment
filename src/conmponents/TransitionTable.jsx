@@ -30,7 +30,7 @@ function TransitionTable() {
         </div>
       </div>
 
-      <div className='grid grid-cols-5 bg-searchBar p-2 mx-4 font-light text-sm'>
+      <div className='grid-cols-5 bg-searchBar p-2 mx-4 font-light text-sm hidden sm:grid'>
         <div>Order ID</div>
         <div>Status</div>
         <div>Transaction ID</div>
@@ -39,12 +39,21 @@ function TransitionTable() {
       </div>
 
       {transitions.map((transaction)=>(
-        <div className='grid grid-cols-5  border-b border-searchBar pb-3 m-4 font-light text-sm'>
-        <div className='text-blue-400'>{transaction.orderId}</div>
-        <div>{transaction.status}</div>
-        <div className='text-searchText'>{transaction.transitionId}</div>
-        <div className='text-searchText'>{transaction.refundDate}</div>
-        <div className='text-searchText text-right'>₹ {transaction.orderAmount}</div>
+      <div className='grid sm:block grid-cols-2 '>
+        <div className='grid-cols-1 sm:hidden p-2 mx-4 font-light text-sm grid '>
+          <div>Order ID</div>
+          <div>Status</div>
+          <div>Transaction ID</div>
+          <div>Refund date</div>
+          <div>Order amount</div>
+        </div>
+        <div className='grid sm:grid-cols-5 grid-col-1 border-b border-searchBar p-2 mx-4 sm:p-0 sm:pb-3 sm:m-4 font-light text-sm text-right sm:text-left'>
+              <div className='text-blue-400'>{transaction.orderId}</div>
+              <div>{transaction.status}</div>
+              <div className='text-searchText'>{transaction.transitionId}</div>
+              <div className='text-searchText'>{transaction.refundDate}</div>
+              <div className='text-searchText sm:text-right'>₹ {transaction.orderAmount}</div>
+        </div>
       </div>
       ))}
     </div>
