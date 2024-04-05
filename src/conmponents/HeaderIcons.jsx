@@ -3,7 +3,7 @@ import React from 'react'
 function HeaderIcons() {
   return (
     <div className='flex justify-end p-4'>
-      <div className='px-2'>
+      <div className='px-2 cursor-pointer'>
         <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
           <g clip-path="url(#clip0_110093_4436)">
           <circle cx="20" cy="20" r="20" fill="#E6E6E6"/>
@@ -16,7 +16,7 @@ function HeaderIcons() {
           </defs>
         </svg>
       </div>
-      <div>
+      <div className='cursor-pointer'>
         <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
           <g clip-path="url(#clip0_110093_4441)">
           <circle cx="20" cy="20" r="20" fill="#E6E6E6"/>
