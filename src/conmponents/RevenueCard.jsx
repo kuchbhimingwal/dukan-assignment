@@ -14,7 +14,7 @@ function RevenueCard(
 
   return (
     <div className=''>
-      <div className='bg-websiteBlue-light rounded shadow-sm p-4 mx-4 mt-4'>
+      <div className='bg-websiteBlue-light rounded-t shadow-sm p-4 mx-4 mt-4'>
         <div className='text-white text-sm'>
           {title}
           ?
